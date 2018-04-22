@@ -1,8 +1,3 @@
-/*
- *  This sketch demonstrates how to scan WiFi networks. 
- *  The API is almost the same as with the WiFi Shield library, 
- *  the most obvious difference being the different file you need to include:
- */
 #include "ESP8266WiFi.h"
 #include <PubSubClient.h>
 int powerPin = 2;
@@ -38,7 +33,7 @@ void setup_wifi() {
     delay(50);
     Attempt++;
     //Serial.print(".");
-    if (Attempt == 100)
+    if (Attempt == 150)
     {
       //Serial.println("");
       //Serial.println("Could not connect to WiFi. Sleeping for 1 minute.");
